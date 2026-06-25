@@ -75,15 +75,6 @@
     .marquee-track span b { color: var(--red); }
     @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    /* DISH CAROUSEL */
-    .dish-carousel-wrap { padding: 3rem 0 0; background: var(--dark-card); overflow: hidden; }
-    .dish-carousel-title { text-align: center; font-size: .7rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--red); margin-bottom: 1.5rem; padding: 0 5vw; }
-    .dish-carousel-track { display: flex; gap: 16px; width: max-content; animation: carouselScroll 38s linear infinite; padding: 0 5vw; }
-    .dish-carousel-wrap:hover .dish-carousel-track { animation-play-state: paused; }
-    .dish-card { flex-shrink: 0; width: 180px; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); background: var(--glass-bg); }
-    .dish-card img { width: 100%; height: 140px; object-fit: cover; display: block; }
-    .dish-card-label { padding: 8px 10px; font-size: .72rem; font-weight: 600; color: var(--gold); text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    @keyframes carouselScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
     /* SECTION BASE */
     section { padding: 6rem 5vw; }
@@ -245,46 +236,6 @@
   </div>
 </div>
 
-<!-- DISH CAROUSEL — photos injected here when menu photos arrive -->
-<div class="dish-carousel-wrap" id="dishCarousel">
-  <p class="dish-carousel-title" data-es="Algunos de nuestros platillos" data-en="Some of our dishes">Algunos de nuestros platillos</p>
-  <div class="dish-carousel-track" id="carouselTrack">
-    
-    <!-- ROW 1 -->
-    <div class="dish-card"><img src="img/dishes/birria_jugo.jpg" alt="Birria con Jugo" /><div class="dish-card-label" data-es="Birria con Jugo" data-en="Birria with Broth">Birria con Jugo</div></div>
-    <div class="dish-card"><img src="img/dishes/birria_seca.jpg" alt="Birria Seca" /><div class="dish-card-label" data-es="Birria Seca" data-en="Dry Birria">Birria Seca</div></div>
-    <div class="dish-card"><img src="img/dishes/bistec_asado.jpg" alt="Bistec Asado" /><div class="dish-card-label" data-es="Bistec Asado" data-en="Grilled Steak">Bistec Asado</div></div>
-    <div class="dish-card"><img src="img/dishes/burrito_asada.jpg" alt="Burrito de Asada" /><div class="dish-card-label" data-es="Burrito de Asada" data-en="Carne Asada Burrito">Burrito de Asada</div></div>
-    <div class="dish-card"><img src="img/dishes/camarones_diabla.jpg" alt="Camarones a la Diabla" /><div class="dish-card-label" data-es="Camarones a la Diabla" data-en="Diabla Shrimp">Camarones a la Diabla</div></div>
-    <div class="dish-card"><img src="img/dishes/camarones_rancheros.jpg" alt="Camarones Rancheros" /><div class="dish-card-label" data-es="Camarones Rancheros" data-en="Ranch Shrimp">Camarones Rancheros</div></div>
-    <div class="dish-card"><img src="img/dishes/chilaquiles.jpg" alt="Chilaquiles" /><div class="dish-card-label" data-es="Chilaquiles" data-en="Chilaquiles">Chilaquiles</div></div>
-    <div class="dish-card"><img src="img/dishes/coctel_camaron.jpg" alt="Coctel de Camarón" /><div class="dish-card-label" data-es="Coctel de Camarón" data-en="Shrimp Cocktail">Coctel de Camarón</div></div>
-    <div class="dish-card"><img src="img/dishes/costillas_nopales.jpg" alt="Costillas con Nopales" /><div class="dish-card-label" data-es="Costillas con Nopales" data-en="Ribs with Cactus">Costillas con Nopales</div></div>
-    <div class="dish-card"><img src="img/dishes/enchiladas.jpg" alt="Enchiladas" /><div class="dish-card-label" data-es="Enchiladas" data-en="Enchiladas">Enchiladas</div></div>
-    <div class="dish-card"><img src="img/dishes/flautas.jpg" alt="Flautas de Pollo" /><div class="dish-card-label" data-es="Flautas de Pollo" data-en="Chicken Flautas">Flautas de Pollo</div></div>
-    <div class="dish-card"><img src="img/dishes/huevos_mexicana.jpg" alt="Huevos a la Mexicana" /><div class="dish-card-label" data-es="Huevos a la Mexicana" data-en="Mexican Eggs">Huevos a la Mexicana</div></div>
-    <div class="dish-card"><img src="img/dishes/machaca.jpg" alt="Machaca" /><div class="dish-card-label" data-es="Machaca con Huevos" data-en="Machaca with Eggs">Machaca con Huevos</div></div>
-    <div class="dish-card"><img src="img/dishes/mojarra_frita.jpg" alt="Mojarra Frita" /><div class="dish-card-label" data-es="Mojarra Frita" data-en="Fried Tilapia">Mojarra Frita</div></div>
-    <div class="dish-card"><img src="img/dishes/quesabirria.jpg" alt="Quesabirria" /><div class="dish-card-label" data-es="Quesabirria" data-en="Quesabirria">Quesabirria</div></div>
-    <div class="dish-card"><img src="img/dishes/sopes.jpg" alt="Sopes" /><div class="dish-card-label" data-es="Sopes" data-en="Sopes">Sopes</div></div>
-    <div class="dish-card"><img src="img/dishes/taco_enchilada.jpg" alt="Taco + Enchilada" /><div class="dish-card-label" data-es="Taco + Enchilada" data-en="Taco + Enchilada">Taco + Enchilada</div></div>
-    <div class="dish-card"><img src="img/dishes/tacos_dorados.jpg" alt="Tacos Dorados" /><div class="dish-card-label" data-es="Tacos Dorados" data-en="Crispy Tacos">Tacos Dorados</div></div>
-    <div class="dish-card"><img src="img/dishes/torta_jamon.jpg" alt="Torta de Jamón" /><div class="dish-card-label" data-es="Torta de Jamón" data-en="Ham Torta">Torta de Jamón</div></div>
-    <div class="dish-card"><img src="img/dishes/tostada_camaron.jpg" alt="Tostada de Camarón" /><div class="dish-card-label" data-es="Tostada de Camarón" data-en="Shrimp Tostada">Tostada de Camarón</div></div>
-    <!-- duplicate for seamless loop -->
-    <div class="dish-card"><img src="img/dishes/birria_jugo.jpg" alt="Birria con Jugo" /><div class="dish-card-label" data-es="Birria con Jugo" data-en="Birria with Broth">Birria con Jugo</div></div>
-    <div class="dish-card"><img src="img/dishes/birria_seca.jpg" alt="Birria Seca" /><div class="dish-card-label" data-es="Birria Seca" data-en="Dry Birria">Birria Seca</div></div>
-    <div class="dish-card"><img src="img/dishes/bistec_asado.jpg" alt="Bistec Asado" /><div class="dish-card-label" data-es="Bistec Asado" data-en="Grilled Steak">Bistec Asado</div></div>
-    <div class="dish-card"><img src="img/dishes/burrito_asada.jpg" alt="Burrito de Asada" /><div class="dish-card-label" data-es="Burrito de Asada" data-en="Carne Asada Burrito">Burrito de Asada</div></div>
-    <div class="dish-card"><img src="img/dishes/camarones_diabla.jpg" alt="Camarones a la Diabla" /><div class="dish-card-label" data-es="Camarones a la Diabla" data-en="Diabla Shrimp">Camarones a la Diabla</div></div>
-    <div class="dish-card"><img src="img/dishes/enchiladas.jpg" alt="Enchiladas" /><div class="dish-card-label" data-es="Enchiladas" data-en="Enchiladas">Enchiladas</div></div>
-    <div class="dish-card"><img src="img/dishes/mojarra_frita.jpg" alt="Mojarra Frita" /><div class="dish-card-label" data-es="Mojarra Frita" data-en="Fried Tilapia">Mojarra Frita</div></div>
-    <div class="dish-card"><img src="img/dishes/quesabirria.jpg" alt="Quesabirria" /><div class="dish-card-label" data-es="Quesabirria" data-en="Quesabirria">Quesabirria</div></div>
-    <div class="dish-card"><img src="img/dishes/flautas.jpg" alt="Flautas de Pollo" /><div class="dish-card-label" data-es="Flautas de Pollo" data-en="Chicken Flautas">Flautas de Pollo</div></div>
-    <div class="dish-card"><img src="img/dishes/coctel_camaron.jpg" alt="Coctel de Camarón" /><div class="dish-card-label" data-es="Coctel de Camarón" data-en="Shrimp Cocktail">Coctel de Camarón</div></div>
-    <div class="dish-card"><img src="img/dishes/tacos_dorados.jpg" alt="Tacos Dorados" /><div class="dish-card-label" data-es="Tacos Dorados" data-en="Crispy Tacos">Tacos Dorados</div></div>
-  </div>
-</div>
 
 <!-- MENU -->
 <section id="menu">
